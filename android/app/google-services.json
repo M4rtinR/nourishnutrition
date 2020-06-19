@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "874057323078",
+    "firebase_url": "https://nourish-nutrition-b92ed.firebaseio.com",
+    "project_id": "nourish-nutrition-b92ed",
+    "storage_bucket": "nourish-nutrition-b92ed.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:874057323078:android:3b2dc1621bd5080d9fb047",
+        "android_client_info": {
+          "package_name": "com.nourishnutritionuk.nourishnutrition"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "874057323078-gclvhq1bggsvdadfk43opd66mn8010f6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_RR5_EdmsCwYQJgajdRH7cDR8RXX4Rgc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "874057323078-gclvhq1bggsvdadfk43opd66mn8010f6.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "874057323078-fbocedhnp468a52nkoa6gs5e07r0bvbc.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.nourishnutritionuk.nourishnutrition"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
