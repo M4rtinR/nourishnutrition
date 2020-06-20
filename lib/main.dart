@@ -3,6 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:firebase_analytics/firebase_analytics.dart';
 import 'package:firebase_analytics/observer.dart';
 import 'package:nourishnutrition/analytics.dart';
+import 'package:provider/provider.dart';
+import 'package:nourishnutrition/auth.dart';
+import 'package:easy_firebase_auth/easy_firebase_auth.dart';
 
 void main() => runApp(MyApp());
 
@@ -12,12 +15,16 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Nourish Nutrition',
-      home: MyHomePage(
+    return ChangeNotifierProvider<AuthState>(
+      child: MaterialApp(
         title: 'Nourish Nutrition',
-        myAnalytics: _myAnalytics,
+        home: MyParentPage(
+          title: 'Nourish Nutrition',
+          //myAnalytics: _myAnalytics,
+        ),
+
       ),
+      create: (_) => AuthState(splashScreenDurationMillis: 2000),
     );
   }
 }
