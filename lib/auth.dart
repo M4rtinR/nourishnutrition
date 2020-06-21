@@ -52,10 +52,30 @@ class MyParentPage extends StatelessWidget {
   }
 
   Widget _MySplashScreen() {
-    return Scaffold(
-      body: Image(
-        image: AssetImage('images/nourishlogo.png'),
-          fit: BoxFit.cover,),
+    return SafeArea(
+      child: Scaffold(
+        body: Stack(
+          alignment: Alignment.center,
+          children: <Widget>[
+            Column(
+              children: <Widget>[
+                Expanded(
+                  child: Center(
+                    child: Container(
+                      constraints: BoxConstraints(maxWidth: double.infinity - 50),
+                      padding: EdgeInsets.all(10),
+                      decoration: BoxDecoration(
+                        image: DecorationImage(
+                          image: AssetImage('images/nourishlogo.png'),
+                          fit: BoxFit.cover,
+                        ),
+                      ),
+                    ),
+                  ),
+                )],
+            )],
+        )
+      )
     );
   }
 
@@ -66,8 +86,28 @@ class MyParentPage extends StatelessWidget {
       logInWithGoogle: false,
       logInWithApple: false,
       authStrings: authStrings,
-      backgroundWidget: Image(image: AssetImage('images/nourishlogo.png'),
-        fit: BoxFit.cover,),
+      expandedWidget: Center(
+        child: Container(
+          constraints: BoxConstraints(maxWidth: double.infinity - 50),
+          padding: EdgeInsets.all(10),
+          decoration: BoxDecoration(
+            image: DecorationImage(
+              image: AssetImage('images/nourishlogo.png'),
+              fit: BoxFit.cover,
+            ),
+          ),
+        ),
+      ),
+
+      emailLoginBuilder: (BuildContext context){
+        return EmailLoginScreen(
+          authStrings: authStrings,
+          appBar: AppBar(
+            title: Text("Login to Nourish Nutrition"),
+          ),
+          mainColor: Colors.green,
+        );
+      }
     );
   }
 }

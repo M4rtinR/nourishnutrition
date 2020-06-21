@@ -49,7 +49,7 @@ packages:
       name: cloud_firestore
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.13.6"
+    version: "0.13.7"
   cloud_firestore_platform_interface:
     dependency: transitive
     description:
@@ -81,9 +81,11 @@ packages:
   easy_firebase_auth:
     dependency: "direct main"
     description:
-      name: easy_firebase_auth
-      url: "https://pub.dartlang.org"
-    source: hosted
+      path: "."
+      ref: HEAD
+      resolved-ref: c415205c91f367264325219f9b52b57eff3b18f5
+      url: "https://github.com/M4rtinR/easy_firebase_auth"
+    source: git
     version: "1.0.6"
   fake_async:
     dependency: transitive
