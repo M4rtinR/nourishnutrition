@@ -2,9 +2,9 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_analytics/firebase_analytics.dart';
 import 'package:firebase_analytics/observer.dart';
-import 'package:nourishnutrition/analytics.dart';
+import 'file:///C:/Users/conta/AndroidStudioProjects/nourishnutrition/lib/functions/analytics.dart';
 import 'package:provider/provider.dart';
-import 'package:nourishnutrition/auth.dart';
+import 'file:///C:/Users/conta/AndroidStudioProjects/nourishnutrition/lib/functions/auth.dart';
 import 'package:easy_firebase_auth/easy_firebase_auth.dart';
 
 void main() => runApp(MyApp());
