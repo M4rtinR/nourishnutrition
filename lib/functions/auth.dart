@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:easy_firebase_auth/easy_firebase_auth.dart';
 import 'package:provider/provider.dart';
+import 'file:///C:/Users/conta/AndroidStudioProjects/nourishnutrition/lib/screens/clients/clientDashboard.dart';
+import 'file:///C:/Users/conta/AndroidStudioProjects/nourishnutrition/lib/screens/coach/coachDashboard.dart';
 
 class MyParentPage extends StatelessWidget {
   MyParentPage({this.title});
@@ -31,7 +33,8 @@ class MyParentPage extends StatelessWidget {
       //introductionScreen: MyIntroductionScreen(),
       loginScreen: _MyLoginScreen(authStrings: authStrings),
 
-      mainScreen: Builder(
+      mainScreen: ClientDashboard(title: 'Client Dashboard'),
+      /*Builder(
         builder: (BuildContext context) {
           AuthState authState = Provider.of(context);
 
@@ -47,7 +50,7 @@ class MyParentPage extends StatelessWidget {
             ),
           );
         },
-      ),
+      ),*/
     );
   }
 
